@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+    <modelVersion>4.0.0</modelVersion>
+
+    <groupId>com.okharkovskyi</groupId>
+    <artifactId>spring-boot-scala-jackson-configuration</artifactId>
+    <packaging>pom</packaging>
+    <version>1.2.0-SNAPSHOT</version>
+    <description>Spring Boot Scala Jackson Configuration</description>
+    <developers>
+        <developer>
+            <name>Aleksandr Kharkovskyi</name>
+            <roles>
+                <role>owner</role>
+            </roles>
+        </developer>
+    </developers>
+    <modules>
+        <module>spring-boot-scala-jackson-autoconfigure</module>
+        <module>spring-boot-scala-jackson-web-starter</module>
+    </modules>
+</project>
