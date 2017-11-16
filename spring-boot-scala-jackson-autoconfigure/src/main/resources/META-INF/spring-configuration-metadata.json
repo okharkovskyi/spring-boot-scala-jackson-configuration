@@ -1,0 +1,13 @@
+{
+  "groups": [],
+  "properties": [
+    {
+      "name": "scala.jackson.serialization.enabled",
+      "type": "java.lang.Boolean",
+      "description": "Enable DefaultScalaModule for Jackson Serializaion of Scala classes.",
+      "sourceType": "com.okharkovskyi.jackson.ScalaJacksonAutoConfiguration",
+      "defaultValue": true
+    }
+  ]
+}
+

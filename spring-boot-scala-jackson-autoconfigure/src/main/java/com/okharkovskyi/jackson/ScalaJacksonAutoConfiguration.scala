@@ -2,11 +2,12 @@ package com.okharkovskyi.jackson
 
 import com.fasterxml.jackson.databind.ObjectMapper
 import com.fasterxml.jackson.module.scala.DefaultScalaModule
-import org.springframework.boot.autoconfigure.condition.ConditionalOnMissingBean
+import org.springframework.boot.autoconfigure.condition.{ConditionalOnMissingBean, ConditionalOnProperty}
 import org.springframework.context.annotation.{Bean, Configuration}
 import org.springframework.http.converter.json.MappingJackson2HttpMessageConverter
 
 @Configuration
+@ConditionalOnProperty(name = Array("scala.jackson.serialization.enabled"), havingValue = "true", matchIfMissing = true)
 class ScalaJacksonAutoConfiguration {
 
   @Bean
